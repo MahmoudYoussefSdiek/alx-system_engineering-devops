@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays all active IPv4 IPs.
+
+ifconfig | awk -F "[: ]+" '/inet addr:/ && $4 != "127.0.0.1" { print $4 }'
