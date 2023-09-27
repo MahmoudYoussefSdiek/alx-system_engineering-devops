@@ -2,7 +2,6 @@
 # Script that installs and configures Nginx web server
 apt-get -y update
 apt-get -y install nginx
-sed -i "21s/^listen .*/listen 80" /etc/nginx/sites-enabled/defult
 ufw allow 'Nginx HTTP'
-echo Hello World! > /var/www/html/index.nginx-debian.html
+echo 'Hello World!' > /var/www/html/index.html
 service nginx start
