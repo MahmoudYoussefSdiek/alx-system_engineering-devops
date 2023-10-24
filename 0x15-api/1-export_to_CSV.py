@@ -31,7 +31,7 @@ if __name__ == '__main__':
         for task in todo_data:
             writer.writerow({
                 'USER_ID': user_id,
-                'USERNAME': user_data['username'],
+                'USERNAME': user_data['name'],
                 'TASK_COMPLETED_STATUS': str(task['completed']),
                 'TASK_TITLE': task['title']
             })
